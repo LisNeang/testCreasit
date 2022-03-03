@@ -1,0 +1,50 @@
+// main: ../style.scss
+
+header {
+
+    a{
+      color: $white;
+    }
+
+    nav{
+      display: flex;
+      padding: 2em 0;
+      justify-content: center;
+      background: $black; 
+    }
+
+    #menu_principal{
+      display: flex;
+      justify-content: space-around;
+      list-style: none; 
+      text-transform: uppercase;
+
+        li{
+          padding: 0 2em;
+          font-weight: lighter;
+        }
+
+        li:not(:last-child) {
+          border-right: 1px solid $white;
+        }
+    }
+
+    .menu_pictos ul{
+      display: flex;
+      flex-direction: row;
+
+        li{
+          padding: 0 2em 0 0;
+
+          :before{
+            font-size: 1.2rem;
+          }
+        }
+    }
+
+
+
+}
+
+
+
