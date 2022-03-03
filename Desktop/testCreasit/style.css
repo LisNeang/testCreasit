@@ -34,6 +34,23 @@ header .menu_pictos ul li :before {
   font-size: 1.2rem;
 }
 
+.swiper {
+  height: 480px;
+}
+.swiper .swiper-slide {
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+.swiper .swiper-slide img {
+  max-width: 100%;
+}
+.swiper .swiper-button-prev:after, .swiper .swiper-button-next:after {
+  color: #fff;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

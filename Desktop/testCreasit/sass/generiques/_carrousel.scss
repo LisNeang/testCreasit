@@ -1,0 +1,24 @@
+
+// main: ../style.scss
+
+// carrousel
+.swiper {
+    height: 480px;
+  
+    .swiper-slide{
+      background: #ccc; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+  
+        img{
+          max-width: 100%;
+        }
+    }
+
+    .swiper-button-prev:after, .swiper-button-next:after {
+      color: $white;
+  }
+  
+  }
