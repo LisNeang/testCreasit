@@ -1,0 +1,29 @@
+.linksEnd{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-transform: uppercase;
+
+    li{
+        margin: 1rem;
+        padding: 1rem 5rem 1rem 0;
+        color: $color5;
+        
+        &:not(:last-child) {
+            border-right: 1px $color6 solid;
+        }
+
+        a{
+            color: $color5;
+
+            &:hover{
+                color: $color1;
+            }
+        }
+
+        i{
+            margin: 1rem; 
+            color: $color6;
+        }
+    }
+}
