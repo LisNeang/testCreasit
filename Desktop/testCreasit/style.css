@@ -1,14 +1,14 @@
 /**-----------------------------------------------------------
 COULEURS
 ----------------------------------------------------------- */
-header a {
-  color: #fff;
-}
 header nav {
   display: flex;
   padding: 2em 0;
   justify-content: center;
   background: #000;
+}
+header nav a {
+  color: #fff;
 }
 header #menu_principal {
   display: flex;
@@ -32,6 +32,20 @@ header .menu_pictos ul li {
 }
 header .menu_pictos ul li :before {
   font-size: 1.2rem;
+}
+header .breadcrumb ul {
+  display: flex;
+  flex-direction: row;
+}
+header .breadcrumb ul li {
+  border-right: 1px solid #F0F0F0;
+  padding: 0.5rem;
+}
+header .breadcrumb ul li a {
+  color: #333;
+}
+header .breadcrumb ul li:first-child {
+  border-left: 1px solid #F0F0F0;
 }
 
 .swiper {
