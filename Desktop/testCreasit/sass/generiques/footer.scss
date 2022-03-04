@@ -1,0 +1,28 @@
+footer{
+    background-color: $color1;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap : normal 10%;
+}
+
+
+.contactBtn{
+    display: block;
+	background-color: $white;
+	border-radius: 3px;
+	border: none;
+	padding: 20px 30px;
+	text-transform: uppercase;
+	margin: 1.3rem 0;
+    a{
+        display: block;
+        color: $color1;
+
+        i{
+            padding-right: 0.5rem;
+        }
+
+    }
+}
