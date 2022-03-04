@@ -1,0 +1,25 @@
+.filters{
+  background-color: $color4;
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 1.1em 0 0 1.5em;
+
+
+      li{
+        padding: 0 0.5em 0.5em 0;
+        a{
+          display: block;
+          font-size: 1rem;
+          background-color: $white;
+          border-radius: 20px;
+          padding: 9px 15px;
+          color: $color3;
+
+        }
+      }
+
+    }
+}

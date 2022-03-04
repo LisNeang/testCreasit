@@ -48,6 +48,13 @@ header .breadcrumb ul li:first-child {
   border-left: 1px solid #F0F0F0;
 }
 
+.articlesList {
+  display: flex;
+}
+.articlesList .articleImg {
+  width: 30%;
+}
+
 .swiper {
   height: 480px;
 }
@@ -65,29 +72,19 @@ header .breadcrumb ul li:first-child {
   color: #fff;
 }
 
-main .titre {
-  font-size: 1.6em;
-  background: #012C9C;
-  color: #fff;
-  padding: 0.5em 1em;
-  padding: 1.5em 0 1.5em 2em;
-}
-main .titre p {
-  font-size: 0.6em;
-}
-main .filters {
+.filters {
   background-color: #f0f0f0;
 }
-main .filters ul {
+.filters ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1.1em 0 0 1.5em;
 }
-main .filters ul li {
+.filters ul li {
   padding: 0 0.5em 0.5em 0;
 }
-main .filters ul li a {
+.filters ul li a {
   display: block;
   font-size: 1rem;
   background-color: #fff;
@@ -130,6 +127,19 @@ p {
 h1, h2, h2 {
   margin: 0;
   padding: 0 0 0.5em 0;
+}
+
+.titre {
+  background: #012C9C;
+  color: #fff;
+}
+.titre h1 {
+  font-size: 3em;
+  padding: 0.5em 1em;
+}
+.titre p {
+  font-size: 1em;
+  padding: 0em 0 1.5em 3em;
 }
 
 /*# sourceMappingURL=style.css.map */
