@@ -65,6 +65,37 @@ header .breadcrumb ul li:first-child {
   color: #fff;
 }
 
+main .titre {
+  font-size: 1.6em;
+  background: #012C9C;
+  color: #fff;
+  padding: 0.5em 1em;
+  padding: 1.5em 0 1.5em 2em;
+}
+main .titre p {
+  font-size: 0.6em;
+}
+main .filters {
+  background-color: #f0f0f0;
+}
+main .filters ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1.1em 0 0 1.5em;
+}
+main .filters ul li {
+  padding: 0 0.5em 0.5em 0;
+}
+main .filters ul li a {
+  display: block;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 9px 15px;
+  color: #333;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -98,7 +129,7 @@ p {
 
 h1, h2, h2 {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0.5em 0;
 }
 
 /*# sourceMappingURL=style.css.map */
