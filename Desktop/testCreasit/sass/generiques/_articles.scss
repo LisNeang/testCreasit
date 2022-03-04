@@ -1,8 +1,67 @@
 .articlesList{
     display: flex;
+    flex-direction: column;
 
-    .articleImg{
-      width: 30%;
+    article{
+      box-shadow: 0px 1px 10px #eee;
+      border-radius: 0.5em;
+      margin: 1.5rem 2rem;
+      padding: 1.5rem;
+
+      .urlArticle{
+        flex-direction: row;
+        display: flex;
+      }
+
+      h2{
+        color: $color1;
+        font-size: 1.5em;
+      }
+
+      p{
+        color: $color3;
+        font-size: 1em;
+      }
+
+      .articleImg{
+        width: 30%;
+        max-height: 250px;
+        overflow: hidden;
+
+        img{
+          width: 100%;
+          //max-height: 100%;
+          object-fit: cover; 
+        }
+      }
+
+      .articleInfos{
+       width: 70%;
+       margin: 0.5em 2em 2em 2em;
+       
+       .catName{
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 0.8rem;
+        background-color: $color4;
+        border-radius: 20px;
+        padding: 9px 15px;
+        color: #333;
+        margin: 0 0 1em 0;
+       }
+
+       .info_date{
+        color: $color5;
+        font-size: 1em;
+        margin: 2em 0 0 0;
+
+          i{
+            padding: 0 1rem 0 0;
+          }
+
+       }
+      }
+
     }
 }
 
