@@ -56,15 +56,13 @@ header .menu_pictos ul li :before {
   display: flex;
   flex-direction: column;
 }
-.articlesList article {
+.articlesList article .urlArticle {
+  flex-direction: row;
+  display: flex;
   box-shadow: 0px 1px 10px #eee;
   border-radius: 0.5em;
   margin: 1.5rem 10rem;
   padding: 1.5rem;
-}
-.articlesList article .urlArticle {
-  flex-direction: row;
-  display: flex;
 }
 .articlesList article h2 {
   color: #012C9C;
@@ -241,6 +239,9 @@ footer .footerInfos {
 }
 .swiper .swiper-button-prev:after, .swiper .swiper-button-next:after {
   color: #fff;
+}
+.swiper .off {
+  display: none;
 }
 
 .filters {
