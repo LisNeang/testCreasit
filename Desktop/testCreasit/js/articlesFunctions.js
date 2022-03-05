@@ -1,6 +1,7 @@
 //afficher au chargement que les 3 premiers articles
 const lItems = document.getElementsByClassName("urlArticle");
 
+
 function loadFirst3()
  {
 
@@ -22,20 +23,26 @@ function loadFirst3()
                 break;
                 
             }
-            console.log(countArticleAdded);
-        }
-       
+        }   
       }
-   
+      textResultats();
  }
 
- //afficher le nombre de résultats
- //function textResultats()
- //{
-    // const textResultats = document.getElementsByClassName("texteResultats");
-   //  console.log('textResultats');
-   //  textResultats.innerHTML="kkkkVous avez vu 7 résultats sur 30";
-     
-   //  lItems.length
+ // afficher le nombre de résultats
+ function textResultats()
+ {
+  const lItemsLength = lItems.length;
+   const textResultats = document.getElementsByClassName("texteResultats")[0];
    
- //}
+   let countArticleAffiche = 3;
+   for(let i = 3; i < lItems.length; i++) {
+
+    if(lItems[i].style.display == "flex" ){
+      countArticleAffiche = countArticleAffiche+1;
+    }   
+  }
+   textResultats.textContent='Vous avez vu ' + countArticleAffiche + ' résultats sur ' + lItemsLength;
+
+
+   
+ }
