@@ -50,6 +50,11 @@ header .menu_pictos ul li :before {
 }
 .breadcrumb ul li a {
   color: #333;
+  padding: 0.3rem;
+}
+.breadcrumb ul li :hover {
+  background-color: #d9ddde;
+  padding: 0.3rem;
 }
 .breadcrumb ul li:first-child {
   border-left: 1px solid #F0F0F0;
