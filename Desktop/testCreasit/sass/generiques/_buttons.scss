@@ -1,4 +1,15 @@
 .buttons{
     display: flex;
     justify-content: center;
+
+    li{
+        display: inline;
+        background-color: $color1;
+        color: $white;
+        border-radius: 3px;
+        border: none;
+        padding: 20px 30px;
+        text-transform: uppercase;
+        margin: 2rem;
+    }
 }

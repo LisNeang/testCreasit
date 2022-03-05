@@ -33,18 +33,22 @@ header .menu_pictos ul li {
 header .menu_pictos ul li :before {
   font-size: 1.2rem;
 }
-header .breadcrumb ul {
+
+.breadcrumb {
+  margin: 0 0 0 10rem;
+}
+.breadcrumb ul {
   display: flex;
   flex-direction: row;
 }
-header .breadcrumb ul li {
+.breadcrumb ul li {
   border-right: 1px solid #F0F0F0;
   padding: 0.5rem;
 }
-header .breadcrumb ul li a {
+.breadcrumb ul li a {
   color: #333;
 }
-header .breadcrumb ul li:first-child {
+.breadcrumb ul li:first-child {
   border-left: 1px solid #F0F0F0;
 }
 
@@ -55,7 +59,7 @@ header .breadcrumb ul li:first-child {
 .articlesList article {
   box-shadow: 0px 1px 10px #eee;
   border-radius: 0.5em;
-  margin: 1.5rem 2rem;
+  margin: 1.5rem 10rem;
   padding: 1.5rem;
 }
 .articlesList article .urlArticle {
@@ -109,13 +113,13 @@ header .breadcrumb ul li:first-child {
   font-size: 14px;
   text-transform: uppercase;
   color: #7b7b7b;
-  margin: 2rem;
+  margin: 2rem 0 0 0;
 }
 
 .banner {
   display: flex;
   flex-direction: row;
-  margin: 2rem;
+  margin: 2rem 10rem;
   padding: 2rem;
   background: #f0f0f0;
   align-items: center;
@@ -130,7 +134,7 @@ header .breadcrumb ul li:first-child {
   max-width: 990px;
   margin-right: 2rem;
 }
-.banner button i {
+.banner i {
   margin-right: 0.5rem;
   display: inline;
 }
@@ -138,6 +142,16 @@ header .breadcrumb ul li:first-child {
 .buttons {
   display: flex;
   justify-content: center;
+}
+.buttons li {
+  display: inline;
+  background-color: #012C9C;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  margin: 2rem;
 }
 
 .linksEnd {
@@ -165,13 +179,34 @@ header .breadcrumb ul li:first-child {
   color: #d9ddde;
 }
 
-footer {
+footer .footerInfos {
   background-color: #012C9C;
   color: #fff;
   display: flex;
   flex-direction: row;
-  padding: 2rem;
+  padding: 2rem 10rem;
   gap: normal 10%;
+}
+
+.footerNav {
+  margin: 2rem 0;
+  padding: 0 10rem;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.footerNav a {
+  color: #333;
+}
+.footerNav a:hover {
+  color: #012C9C;
+}
+.footerNav li {
+  padding: 0 2em;
+  font-weight: lighter;
+}
+.footerNav li:not(:last-child) {
+  border-right: 1px solid #7b7b7b;
 }
 
 .contactBtn {
@@ -215,7 +250,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 1.1em 0 0 1.5em;
+  padding: 2rem 10rem 2rem 10rem;
 }
 .filters ul li {
   padding: 0 0.5em 0.5em 0;
@@ -275,16 +310,20 @@ h3 {
 }
 .titre h1 {
   font-size: 3em;
-  padding: 0.5em 1em;
+  padding: 2rem 1rem 1rem 10rem;
 }
 .titre p {
   font-size: 1em;
-  padding: 0em 0 1.5em 3em;
+  padding: 0em 0 1.5em 10rem;
 }
 
-button {
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
   display: inline;
-  height: 50px;
   background-color: #012C9C;
   color: #fff;
   border-radius: 3px;
@@ -292,11 +331,6 @@ button {
   padding: 20px 30px;
   text-transform: uppercase;
   margin: 2rem;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

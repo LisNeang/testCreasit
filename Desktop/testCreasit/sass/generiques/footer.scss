@@ -1,11 +1,38 @@
 footer{
-    background-color: $color1;
-    color: $white;
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-    gap : normal 10%;
+    .footerInfos{
+        background-color: $color1;
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 10rem;
+        gap : normal 10%;
+    }
 }
+
+    .footerNav{
+        margin: 2rem 0;
+        padding: 0 10rem;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+
+            a{
+                color: #333;
+                &:hover{
+                    color: $color1;
+                }
+            }
+
+            li{
+            padding: 0 2em;
+            font-weight: lighter;
+            }
+
+            li:not(:last-child) {
+            border-right: 1px solid $color5;
+            }
+
+    }
 
 
 .contactBtn{

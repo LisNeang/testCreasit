@@ -51,17 +51,21 @@ ul {
 	color: $white;
 	h1{
 	  font-size: 3em;
-	  padding: 0.5em 1em;
+	  padding: 2rem 1rem 1rem 10rem;
 	}
 	p{
 	  font-size: 1em;
-	  padding: 0em 0 1.5em 3em;
+	  padding: 0em 0 1.5em 10rem;
 	}
   }
 
-  button{
+  ul{
+	  margin: 0;
+	  padding: 0;
+  }
+
+  .btn{
 	display: inline;
-	height: 50px;
 	background-color: $color1;
 	color: $white;
 	border-radius: 3px;
@@ -69,12 +73,7 @@ ul {
 	padding: 20px 30px;
 	text-transform: uppercase;
 	margin: 2rem;
-  }
-
-  ul{
-	  margin: 0;
-	  padding: 0;
-  }
+}
 
 
 

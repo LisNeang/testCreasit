@@ -43,28 +43,6 @@ header {
         }
     }
 
-
-    .breadcrumb{
-      ul{
-        display: flex;
-        flex-direction: row;
-
-        li{
-          border-right: 1px solid $color2;
-          padding: 0.5rem;
-
-          a{
-            color: $color3;
-          }
-        }
-
-        li:first-child{
-          border-left: 1px solid $color2;
-        }
-      }
-
-    }
-
 }
 
 
