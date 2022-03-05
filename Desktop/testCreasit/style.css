@@ -10,6 +10,9 @@ header nav {
 header nav a {
   color: #fff;
 }
+header nav a:hover {
+  color: #00bdce;
+}
 header #menu_principal {
   display: flex;
   justify-content: space-around;
@@ -118,7 +121,7 @@ header .menu_pictos ul li :before {
   display: flex;
   flex-direction: row;
   margin: 2rem 10rem;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
   background: #f0f0f0;
   align-items: center;
 }
@@ -223,6 +226,15 @@ footer .footerInfos {
 .contactBtn a i {
   padding-right: 0.5rem;
 }
+.contactBtn:hover {
+  background-color: #00bdce;
+  color: #fff;
+  cursor: pointer;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
 
 .swiper {
   height: 480px;
@@ -263,6 +275,15 @@ footer .footerInfos {
   border-radius: 20px;
   padding: 9px 15px;
   color: #333;
+}
+.filters ul li a:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 html {
@@ -332,6 +353,16 @@ ul {
   padding: 20px 30px;
   text-transform: uppercase;
   margin: 2rem;
+}
+
+.btn:hover {
+  background-color: #00bdce;
+  color: #fff;
+  cursor: pointer;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -52,4 +52,13 @@ footer{
         }
 
     }
+    &:hover{
+        background-color: $color7;
+        color: $white;
+        cursor: pointer;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
 }

@@ -17,7 +17,16 @@
           border-radius: 20px;
           padding: 9px 15px;
           color: $color3;
+        }
 
+        a:hover{
+          background-color: $color3;
+          color: $white;
+          cursor: pointer;
+          moz-transition: all .4s ease-in-out;
+          -o-transition: all .4s ease-in-out;
+          -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
         }
       }
 
