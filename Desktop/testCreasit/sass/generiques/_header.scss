@@ -2,8 +2,11 @@
 
 header {
 
-
-    nav{
+    position: relative;
+    .menu_desktop{
+      @media screen and (max-width: 960px) {
+        display: none;
+      }
       display: flex;
       padding: 2em 0;
       justify-content: center;
@@ -16,6 +19,7 @@ header {
           color: $color7;
         }
     }
+    
 
     #menu_principal{
       display: flex;
@@ -24,7 +28,7 @@ header {
       text-transform: uppercase;
 
         li{
-          padding: 0 2em;
+          padding: 0 1.2em;
           font-weight: lighter;
         }
 
