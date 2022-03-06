@@ -30,10 +30,10 @@ header {
         li{
           padding: 0 1.2em;
           font-weight: lighter;
-        }
 
-        li:not(:last-child) {
-          border-right: 1px solid $white;
+          &:not(:last-child) {
+            border-right: 1px solid $white;
+          }
         }
     }
 
@@ -44,7 +44,7 @@ header {
         li{
           padding: 0 2em 0 0;
 
-          :before{
+          &:before{
             font-size: 1.2rem;
           }
         }

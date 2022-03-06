@@ -3,11 +3,19 @@
     justify-content: center;
     flex-direction: row;
     text-transform: uppercase;
+    margin-bottom: 2rem;
 
     li{
-        margin: 1rem;
-        padding: 1rem 5rem 1rem 0;
+        padding: 1rem 3rem 1rem 2rem;
         color: $color5;
+        @media screen and (max-width: $screenMedium) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem 4% 1rem 4%;
+            width: 30%;
+        }
+        
         
         &:not(:last-child) {
             border-right: 1px $color6 solid;
@@ -24,6 +32,9 @@
         i{
             margin: 1rem; 
             color: $color6;
+            @media screen and (max-width: $screenMedium) {
+                font-size: 2rem;
+            }
         }
     }
 }

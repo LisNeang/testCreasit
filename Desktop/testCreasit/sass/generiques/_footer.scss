@@ -1,11 +1,15 @@
 footer{
+    background-color: $color1;
     .footerInfos{
-        background-color: $color1;
         color: $white;
+        margin: $box;
         display: flex;
         flex-direction: row;
-        padding: 2rem 10rem;
+        padding: 2rem 0;
         gap : normal 10%;
+        @media screen and (max-width: $screenSmall) {
+            flex-direction: column;
+        }
     }
 }
 
@@ -14,6 +18,7 @@ footer{
         display: flex;
         list-style: none;
         justify-content: center;
+        flex-wrap: wrap;
 
             a{
                 color: #333;
@@ -25,11 +30,16 @@ footer{
             li{
             padding: 0 2em;
             font-weight: lighter;
+            margin: 0 0 1rem;
+
+            &:not(:last-child) {
+                border-right: 1px solid $color5;
             }
 
-            li:not(:last-child) {
-            border-right: 1px solid $color5;
-            }
+            @media screen and (max-width: 960px) {
+                padding: 0 1.5em 0em;
+             }
+             }
 
     }
 
@@ -40,8 +50,14 @@ footer{
 	border-radius: 3px;
 	border: none;
 	padding: 20px 30px;
+    text-align: center;
 	text-transform: uppercase;
 	margin: 1.3rem 0;
+    @media screen and (max-width: $screenSmall) {
+        margin: 1.3rem 2rem 2rem 0;
+        display: inline-block;
+    }
+    
     a{
         display: block;
         color: $color1;

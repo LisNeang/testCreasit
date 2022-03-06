@@ -19,9 +19,16 @@ function loadFirst3()
         if(lItems[i].style.display == "none" ){
             lItems[i].style.display = "flex";
             countArticleAdded = countArticleAdded+1;
+            console.log(i);
+            console.log(lItems.length-1);
+            if(i==(lItems.length-1)){
+                const afficherPlusBtn = document.getElementById("afficherPlusBtn");
+                console.log(afficherPlusBtn);
+                afficherPlusBtn.style.display = "none";
+    
+            }
             if (countArticleAdded>2){
                 break;
-                
             }
         }   
       }

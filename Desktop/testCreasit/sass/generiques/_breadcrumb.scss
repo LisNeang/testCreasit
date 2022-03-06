@@ -1,5 +1,5 @@
 .breadcrumb{
-    margin: $margin;
+    margin: $box;
     ul{
       display: flex;
       flex-direction: row;
@@ -11,10 +11,10 @@
         a{
           color: $color3;
           padding: 0.3rem;
-        }
-        :hover{
-          background-color: $color6;
-          padding: 0.3rem;
+          &:hover{
+            background-color: $color6;
+            padding: 0.3rem;
+          }
         }
       }
 
