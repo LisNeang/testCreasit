@@ -20,6 +20,7 @@
           border-radius: 20px;
           padding: 9px 15px;
           color: $color3;
+          text-transform: uppercase;
         }
 
         a:hover{
@@ -34,6 +35,14 @@
         .filtreOn{
           background: $color1;
           color: $white;
+        }
+
+        .filtrePlus{
+          border: 1px $color5 solid;
+          background-color: $color2;
+          i{
+            padding-left: 3px;
+          }
         }
       }
 

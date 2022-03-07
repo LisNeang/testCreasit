@@ -49,7 +49,10 @@ function loadFirst3()
     }   
   }
    textResultats.textContent='Vous avez vu ' + countArticleAffiche + ' résultats sur ' + lItemsLength;
-
-
-   
  }
+
+
+ 
+
+
+

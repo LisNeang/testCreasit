@@ -533,6 +533,7 @@ body {
   border-radius: 20px;
   padding: 9px 15px;
   color: #333;
+  text-transform: uppercase;
 }
 .filters ul li a:hover {
   background-color: #00bdce;
@@ -546,6 +547,13 @@ body {
 .filters ul li .filtreOn {
   background: #012C9C;
   color: #fff;
+}
+.filters ul li .filtrePlus {
+  border: 1px #666 solid;
+  background-color: #F0F0F0;
+}
+.filters ul li .filtrePlus i {
+  padding-left: 3px;
 }
 
 html {
