@@ -2,12 +2,11 @@
 
 .banner{
     display: flex;
-    flex-direction: row;
     margin: $box;
     padding: 3rem 2rem 3rem 2rem;
     background: $color4;
     @media screen and (max-width: $screenMedium) {
-        margin: $smallBox;
+        margin: 0;
         flex-direction: column;
         text-align: center;
         align-items: center;

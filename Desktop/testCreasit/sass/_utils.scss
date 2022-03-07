@@ -88,6 +88,8 @@ ul {
 	padding: 20px 30px;
 	text-transform: uppercase;
 	margin: 2rem;
+	height: 100%;
+
 
 	&:hover{
 		background-color: $color7;
@@ -104,3 +106,5 @@ ul {
 label{
 	display: none;
 }
+
+
