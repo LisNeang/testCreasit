@@ -1,23 +1,26 @@
 let app = {
     // ref : initialisation d'objets;
-    lItems: 0,
-    lItemsLength: 0,
+    lItemsArticle: 0,
+    lItemsArticleLength: 0,
     /**
      * Initialisation
      */
     init: function() {
-        app.lItems = document.getElementsByClassName("articleItem");
-        app.lItemsLength = app.lItems.length;
+        //articles
+        app.lItemsArticle = document.getElementsByClassName("articleItem");
+        app.lItemsArticleLength = app.lItemsArticle.length;
+
 
         // mise en place des écouteurs d'événements
         app.bindEvents();
 
         // initialisation des fonctions
-        app.loadFirst3();
+        app.loadFirst(3, app.lItemsArticleLength, app.lItemsArticle);
         app.textResultats();
+        app.loadFirst(6, app.lItemsArticleLength, app.lItemsArticle);
     },
 
-    
+
     bindEvents: function() {
         // ajouter un écouteurd'evt
         let afficherPlusBtn = document.getElementById("afficherPlusBtn");
@@ -27,10 +30,10 @@ let app = {
 
 
     //afficher au chargement que les 3 premiers articles
-    loadFirst3: function()
+    loadFirst: function(a, b, c)
     {
-        for(let i = 3; i < app.lItemsLength; i++) {
-            app.lItems[i].style.display = "none";
+        for(let i = a; i < b; i++) {
+            c[i].style.display = "none";
         }
     },
 
@@ -40,13 +43,13 @@ let app = {
     {
         let countArticleAdded = 0;
         
-        for(let i = 3; i < app.lItemsLength; i++) {
-            if(app.lItems[i].style.display == "none" ){
-                app.lItems[i].style.display = "flex";
+        for(let i = 3; i < app.lItemsArticleLength; i++) {
+            if(app.lItemsArticle[i].style.display == "none" ){
+                app.lItemsArticle[i].style.display = "flex";
                 countArticleAdded = countArticleAdded+1;
 
                 // Masquer le bouton si tous les articles sont affichés
-                if(i==(app.lItemsLength-1)){
+                if(i==(app.lItemsArticleLength-1)){
                 afficherPlusBtn.style.display = "none";
         
                 }
@@ -66,12 +69,12 @@ let app = {
         
         let countArticleAffiche = 3;
         // boucle pour décompter le nombre d'éléments affichés
-        for(let i = 3; i < app.lItemsLength; i++) {
-            if(app.lItems[i].style.display == "flex" ){
+        for(let i = 3; i < app.lItemsArticleLength; i++) {
+            if(app.lItemsArticle[i].style.display == "flex" ){
             countArticleAffiche = countArticleAffiche+1;
             }   
         }
-        textResultats.textContent='Vous avez vu ' + countArticleAffiche + ' résultats sur ' + app.lItemsLength;
+        textResultats.textContent='Vous avez vu ' + countArticleAffiche + ' résultats sur ' + app.lItemsArticleLength;
     }
   
 };
