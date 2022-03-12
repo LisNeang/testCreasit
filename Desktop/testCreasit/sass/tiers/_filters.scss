@@ -12,8 +12,8 @@
       }
 
       li{
-        padding: 0 0.5em 0.5em 0;
         a{
+          margin: 0 0.5em 0.5em 0;
           display: block;
           font-size: 1rem;
           background-color: $white;
@@ -21,30 +21,50 @@
           padding: 9px 15px;
           color: $color3;
           text-transform: uppercase;
-        }
+          border: 1px $color4 solid!important;
 
-        a:hover{
-          background-color: $color7;
-          color: $white;
-          cursor: pointer;
-          moz-transition: all .4s ease-in-out;
-          -o-transition: all .4s ease-in-out;
-          -webkit-transition: all .4s ease-in-out;
-          transition: all .4s ease-in-out;
+          i{
+            padding-left: 3px;
+          }
+          
+          &:hover{
+            background-color: $color7;
+            color: $white;
+            border: 1px $color4 solid!important;
+            cursor: pointer;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+          }
         }
         .filtreOn{
           background: $color1;
           color: $white;
         }
 
-        .filtrePlus{
-          border: 1px $color5 solid;
+        #filtrePlusBtn, #filtreMoinsBtn{
           background-color: $color2;
-          i{
-            padding-left: 3px;
+          border: 1px $color5 solid!important;
+          &:hover{
+            background-color: $color7!important;
+            color: $white;
+            border: 1px $color4 solid!important;
+            cursor: pointer;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
           }
         }
+
+
+
+        #filtreMoinsBtn{
+          display: none;
+        }
       }
+
 
     }
 }
