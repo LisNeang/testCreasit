@@ -7,6 +7,9 @@ footer{
         flex-direction: row;
         padding: 2rem 0;
         gap : normal 10%;
+        .tel{
+             color: #fff;
+        }
         @media screen and (max-width: $screenSmall) {
             flex-direction: column;
         }
@@ -57,7 +60,7 @@ footer{
         margin: 1.3rem 2rem 2rem 0;
         display: inline-block;
     }
-    
+
     a{
         display: block;
         color: $color1;

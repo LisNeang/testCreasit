@@ -238,6 +238,11 @@ header .menu_pictos ul li:before {
 .linksEnd li a {
   color: #666;
 }
+@media screen and (max-width: 960px) {
+  .linksEnd li a {
+    font-size: 12px;
+  }
+}
 .linksEnd li a:hover {
   color: #012C9C;
 }
@@ -247,7 +252,7 @@ header .menu_pictos ul li:before {
 }
 @media screen and (max-width: 960px) {
   .linksEnd li i {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -261,6 +266,9 @@ footer .footerInfos {
   flex-direction: row;
   padding: 2rem 0;
   gap: normal 10%;
+}
+footer .footerInfos .tel {
+  color: #fff;
 }
 @media screen and (max-width: 620px) {
   footer .footerInfos {
@@ -663,3 +671,4 @@ label {
 }
 
 /*# sourceMappingURL=style.css.map */
+/*# pour convertir le style.scss à style .css : sass --watch style.scss:style.css */

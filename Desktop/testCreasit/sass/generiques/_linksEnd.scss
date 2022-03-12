@@ -24,6 +24,10 @@
         a{
             color: $color5;
 
+            @media screen and (max-width: $screenMedium) {
+                font-size: 12px;
+                }
+
             &:hover{
                 color: $color1;
             }
@@ -33,7 +37,7 @@
             margin: 1rem; 
             color: $color6;
             @media screen and (max-width: $screenMedium) {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
         }
     }

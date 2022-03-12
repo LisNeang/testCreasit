@@ -15,10 +15,8 @@
     
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="js/articlesFunctions.js"></script>
 
     
-  
 </head>
 <body>
     <header>
@@ -261,7 +259,7 @@
             </article>
             <div class="afficherPlus">
                 <p class="texteResultats">Vous</p>
-                <button id="afficherPlusBtn" class="btn" onclick="loadMore()">afficher plus</button>
+                <button id="afficherPlusBtn" class="btn">afficher plus</button>
             </div>
          </section>
          <section>
@@ -297,7 +295,8 @@
                 <h3>Mairie de Utel</h3>
                 <p>10, place de l'hôtel de ville<br/>
                     01234 Commune<br/>
-                    Tél: +33 (0)2 34 56 78 90
+                    <p>TEL: <a class="tel" href="+33 (0)2 34 56 78 90">+33 (0)2 34 56 78 90</a></p>
+                  
                 <span class="contactBtn"><a href="#" title="nous contacter"><i class="fa-solid fa-envelope"></i>Nous contacter</a></span>
                 </p>
 
@@ -321,6 +320,7 @@
         <li><a href="#" title="@creasit">@Creasit</a></li>
     </ul>
     <script src="js/swiper.js"></script>
+    <script src="js/articlesFunctions.js"></script>
     <script>
         window.onload =loadFirst3();
         window.onload =textResultats();
