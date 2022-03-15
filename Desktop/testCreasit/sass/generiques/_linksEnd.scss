@@ -15,8 +15,6 @@
             padding: 1rem 4% 1rem 4%;
             width: 30%;
         }
-        
-        
         &:not(:last-child) {
             border-right: 1px $color6 solid;
         }
@@ -32,7 +30,6 @@
                 color: $color1;
             }
         }
-
         i{
             margin: 1rem; 
             color: $color6;

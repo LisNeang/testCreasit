@@ -1,3 +1,6 @@
+// code historique avant de passer en app.js, conserver pour explication en cas de besoin
+
+
 const lItems = document.getElementsByClassName("articleItem");
 const lItemsLength = lItems.length;
 

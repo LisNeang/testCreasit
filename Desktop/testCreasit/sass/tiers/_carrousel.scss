@@ -12,7 +12,6 @@
       height: 200px;
     }
 
-  
     .swiper-slide{
       background: #ccc; 
       display: flex;
@@ -27,8 +26,6 @@
 
     .swiper-button-prev:after, .swiper-button-next:after {
       color: $white;
-      @media screen and (max-width: $screenSmall ) {
-      }
     }
 
   
