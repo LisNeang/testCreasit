@@ -1,3 +1,5 @@
+// main: ../style.scss
+
 .buttons{
     display: flex;
     justify-content: center;
@@ -8,7 +10,7 @@
 
     li{
         display: inline;
-        background-color: $color1;
+        background-color: $color7;
         color: $white;
         border-radius: 3px;
         border: none;
@@ -20,4 +22,95 @@
           }
         text-align: center;
     }
+}
+
+
+
+button {
+  border: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+}
+
+
+.psuedo-text {
+  color: #fff;
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: inline;
+  height: auto;
+  font-size: 700;
+  transition: 0.25s ease-in;
+  transition-delay: 0.1s;
+}
+
+.psuedo-text2 {
+  color: $black;
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: inline;
+  height: auto;
+  font-size: 700;
+  transition: 0.25s ease-in;
+  transition-delay: 0.1s;
+}
+
+.flex-1 {
+  flex: 1;
+  min-width: 250px;
+  margin: 0 auto 50px;
+}
+
+.button {
+  padding: 2rem 7rem;
+  background: white;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  will-change: transform;
+}
+
+.button-mat {
+  color: $color8;
+  border: 0px transparent;
+  border-radius: 0.3rem;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.35s;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    background: $color8;
+    position: absolute;
+    width: 200%;
+    height: 500%;
+    border-radius: 100%;
+    transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  &:hover .psuedo-text, &:hover .psuedo-text2 {
+    color: white;
+  }
+  &:hover {
+    color: transparent;
+  }
+}
+
+
+
+.btn--5 {
+    color: $white;
+    &:before {
+      transform: translate(-120%, -50%) translateZ(0);
+  }
+    &:hover:before {
+      transform: translate(-45%, -34%) translateZ(0);
+  }
 }

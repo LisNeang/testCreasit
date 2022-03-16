@@ -1,3 +1,5 @@
+// main: ../style.scss
+
 footer{
     background-color: $color1;
     .footerInfos{
@@ -13,70 +15,66 @@ footer{
         @media screen and (max-width: $screenSmall) {
             flex-direction: column;
         }
+        .contactBtn{
+            color: $black;
+            display: block;
+            border-radius: 3px;
+            border: none;
+            padding: 20px 30px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 1.3rem 0;
+            @media screen and (max-width: $screenSmall) {
+                margin: 1.3rem 2rem 2rem 0;
+                display: inline-block;
+            }
+        
+            a{
+                display: block;
+                color: $color1;
+                i{
+                    padding-right: 0.5rem;
+                }
+        
+            }
+            &:hover{
+                background-color: $color7;
+                color: $white;
+                cursor: pointer;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+        }
     }
 }
 
-    .footerNav{
-        margin: 2rem 0;
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        flex-wrap: wrap;
+.footerNav{
+    margin: 2rem 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
 
-            a{
-                color: #333;
-                &:hover{
-                    color: $color1;
-                }
+        a{
+            color: #333;
+            &:hover{
+                color: $color1;
             }
-
-            li{
-            padding: 0 2em;
-            font-weight: lighter;
-            margin: 0 0 1rem;
-
-            &:not(:last-child) {
-                border-right: 1px solid $color5;
-            }
-
-            @media screen and (max-width: 960px) {
-                padding: 0 1.5em 0em;
-             }
-             }
-
-    }
-
-
-.contactBtn{
-    display: block;
-	background-color: $white;
-	border-radius: 3px;
-	border: none;
-	padding: 20px 30px;
-    text-align: center;
-	text-transform: uppercase;
-	margin: 1.3rem 0;
-    @media screen and (max-width: $screenSmall) {
-        margin: 1.3rem 2rem 2rem 0;
-        display: inline-block;
-    }
-
-    a{
-        display: block;
-        color: $color1;
-
-        i{
-            padding-right: 0.5rem;
         }
 
-    }
-    &:hover{
-        background-color: $color7;
-        color: $white;
-        cursor: pointer;
-        moz-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
-    }
+        li{
+        padding: 0 2em;
+        font-weight: lighter;
+        margin: 0 0 1rem;
+
+        &:not(:last-child) {
+            border-right: 1px solid $color5;
+        }
+
+        @media screen and (max-width: 960px) {
+            padding: 0 1.5em 0em;
+            }
+         }
 }

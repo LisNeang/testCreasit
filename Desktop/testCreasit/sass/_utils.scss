@@ -81,7 +81,7 @@ ul {
 
 .btn{
 	display: block;
-	background-color: $color1;
+	background: $color7;
 	color: $white;
 	border-radius: 3px;
 	border: none;
@@ -92,7 +92,7 @@ ul {
 
 
 	&:hover{
-		background-color: $color7;
+		//background-color: $color7;
 		color: $white;
 		cursor: pointer;
 		moz-transition: all .4s ease-in-out;
@@ -103,10 +103,13 @@ ul {
 	}
 }
 
+.proposerBtn{
+	width: 200px;
+}
+
 label{
 	display: none;
 }
-
 
 
 

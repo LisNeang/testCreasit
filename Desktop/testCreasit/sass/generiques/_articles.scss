@@ -1,3 +1,5 @@
+// main: ../style.scss
+
 .articlesList{
     display: flex;
     flex-direction: column;
@@ -10,67 +12,90 @@
         border-radius: 0.5em;
         padding: 1.5rem;
         margin: 5% 3% 0;
+        border: 2px #fff solid;
+        transition: 2s;
         @media screen and (max-width: $screenMedium) {
           margin: 5% 3% 0;
           flex-direction: column;
           align-items: center;
         }
-      }
 
-      h2{
-        color: $color1;
-        font-size: 1.5em;
-      }
-
-      p{
-        color: $color3;
-        font-size: 1em;
-      }
-
-      .articleImg{
-        width: 30%;
-        max-height: 250px;
-        overflow: hidden;
-        @media screen and (max-width: $screenMedium) {
-          width: 70%;
-        }
-
-        img{
-          width: 100%;
-          //max-height: 100%;
-          object-fit: cover; 
-        }
-      }
-
-      .articleInfos{
-       width: 70%;
-       margin: 0.5em 2em 2em 2em;
-       @media screen and (max-width: $screenMedium) {
-        width: 100%;
-        text-align: center;
-	    }
-       
-       .catName{
-        text-transform: uppercase;
-        display: inline-block;
-        font-size: 0.8rem;
-        background-color: $color4;
-        border-radius: 20px;
-        padding: 9px 15px;
-        color: #333;
-        margin: 0 0 1em 0;
-       }
-
-       .info_date{
-        color: $color5;
-        font-size: 1em;
-        margin: 2em 0 0 0;
-          i{
-            padding: 0 1rem 0 0;
+        .articleImg{
+          width: 30%;
+          max-height: 250px;
+          overflow: hidden;
+          @media screen and (max-width: $screenMedium) {
+            width: 70%;
           }
-       }
-      }
+  
+          img{
+            width: 100%;
+            //max-height: 100%;
+            object-fit: cover; 
+            transition: transform 2s;
+            &:hover{
+              -ms-transform: scale(1.5); /* IE 9 */
+              -webkit-transform: scale(1.5); /* Safari 3-8 */
+              transform: scale(1.5);
+            }
+          }
+        }
 
+        &:hover{
+          padding-left: 20px;
+          border: 2px $color2 solid;
+          box-shadow: 0px 1px 15px $color5;
+          &>img{
+            width: 100%;
+            //max-height: 100%;
+            object-fit: cover; 
+            &:hover{
+              -ms-transform: scale(1.5); /* IE 9 */
+              -webkit-transform: scale(1.5); /* Safari 3-8 */
+              transform: scale(1.5);
+            }
+         }
+        } 
+        h2{
+          color: $color7;
+          font-size: 1.5em;
+        }
+  
+        p{
+          color: $color3;
+          font-size: 1em;
+        }
+  
+        .articleInfos{
+         width: 70%;
+         margin: 0.5em 2em 2em 2em;
+         @media screen and (max-width: $screenMedium) {
+          width: 100%;
+          text-align: center;
+        }
+         
+          .catName{
+          text-transform: uppercase;
+          display: inline-block;
+          font-size: 0.8rem;
+          background-color: $color4;
+          border-radius: 20px;
+          padding: 9px 15px;
+          color: #333;
+          margin: 0 0 1em 0;
+          }
+  
+          .info_date{
+          color: $color5;
+          font-size: 1em;
+          margin: 2em 0 0 0;
+            i{
+              padding: 0 1rem 0 0;
+            }
+          }
+        }
+  
+      } 
     }
 
     .afficherPlus{
@@ -83,8 +108,7 @@
         color: $color5;
         margin: 2rem 0 0 0;
       }
-
-    }
+    }  
 }
 
 

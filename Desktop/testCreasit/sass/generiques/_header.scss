@@ -3,19 +3,22 @@
 header {
     position: relative;
     .menu_desktop{
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      
       @media screen and (max-width: 960px) {
         display: none;
       }
       display: flex;
-      padding: 2em 0;
       justify-content: center;
       background: $black; 
 
         a{
           color: $white;
+          justify-content: center;
+         
         }
         a:hover{
-          color: $color7;
+         // color: $color7;
         }
     }
     
@@ -27,8 +30,21 @@ header {
       text-transform: uppercase;
 
         li{
-          padding: 0 1.2em;
+          display: flex;
+          text-align: center;
+          padding: 2rem auto!important;
           font-weight: lighter;
+          align-items: center;
+          padding: 2em;
+          //flex: 1;
+          color: #fff;
+          letter-spacing: 0.1rem;
+          transition: all 0.5s ease;
+          &:hover {
+        color:white;
+        background: $color7;
+        transition: all 0.5s ease;
+          }
 
           &:not(:last-child) {
             border-right: 1px solid $white;
@@ -39,9 +55,14 @@ header {
     .menu_pictos ul{
       display: flex;
       flex-direction: row;
+      align-items: center;
+      margin: 27px 0 0 20px;
 
         li{
           padding: 0 2em 0 0;
+          display: flex;
+  
+
 
           &:before{
             font-size: 1.2rem;
